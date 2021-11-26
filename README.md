@@ -42,7 +42,13 @@ This project
 # Project Overview
 ___
 ## Project Description  
-**Code Institute: Full Stack Frameworks with Django - Milestone 4 Project** 
+**Code Institute: Full Stack Frameworks with Django - Milestone 4 Project**  
+  
+The Milestone 4 project assignment is to build a full-stack site based around business logic used to control a centrally-owned dataset.  To set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service. I have the option to choose from one of the following two scenarios or to come up with my own idea:  
+. Build a ﬁtness subscription application    
+. Build a site to sell your graphic design services  
+   
+I have decided to create a  
   
 ## Project Requirements  
 

@@ -84,13 +84,19 @@ ___
 ## Strategy
 
 * **Project Goals**
-    * 
+    * To create a fully functioning eCommerce site for Sportmaster, a local sports shop in Celbridge, co. Kildare.  
+    * To allow users to easily view, filter and search for any item available from this shop.  
+    * To allow users to make a safe & secure purchase as conveniently as possible.  
+    * To allow users to create a user profile to keep track of their order history and to speed up the purchase process for future purchases.  
 
 * **Business Goals**   
-    * 
+    * To offer their existing customers an alternative to instore shopping as an added convenience.  
+    * To have a clean, fresh, modern, professional looking website that can be used as a marketing tool to highlight their range of products to potential new customers.
+    * To increase their sales by reaching new customers from outside their immediate physical location.
 
 * **Target audience**
-    * 
+    * The primary target audience are sports enthusiasts in the wider Celbridge and North Kildare area.
+    * The secondary target audience are sports enthusiasts from outside of the shops physical location but primarily within Ireland.  
 
 
 ## User Stories
@@ -132,9 +138,10 @@ The app consists of ........
 ## Surface 
 -----
 ### Color Scheme  
-
+  
+I have chosen a very bright and vibrant colour palette to reflect the active and sporty nature of the products being sold via the site by Sportmaster.  
 ![color palette](./static/readme/colour-palette.png)  
-To create the color palette I used [Coolors](https://coolors.co/).
+To create the color palette I used [Coolors](https://coolors.co/).  
 
 
 

@@ -103,17 +103,42 @@ ___
 
 * **As a first time user I want to be able to:**  
 
-    * 
-    *  
-    *  
-    *  
+    * Clearly understand the purpose of the website.  
+    * Easily navigate around the website. 
+    * View all the products the website is selling. 
+    * Filter products by category. 
+    * Filter products by price or alphabetical order.
+    * Search for a specific product. 
+    * View detailed information about each individual products on a separate page. 
+    * Choose the size, change the quantity and add a product to a shopping basket.
+    * View a full list of items within the shopping basket with a breakdown of the individual costs.
+    * View, update & remove products within my shopping basket. 
+    * Easily see in the Navbar the current total of any items within the shopping basket.  
+    * Securely checkout and purchase the products within my shopping basket. 
+    * Receive an order confirmation on-screen and by email upon completion of my purchase.
+    * Register and create a user profile.   
+    * Contact the stores owners if I have a query.
 
    
 * **As a returning user I want to be able to:**  
-    *  
-    *  
-    *  
-    *  
+    * Login and out of the website with ease. 
+    * View my user profile. 
+    * Save default delivery details in order to speed up future purchases.   
+    * Update my default delivery details.  
+    * View my order history. 
+  
+  
+* **As the site owner I want:**
+    * Customers to be able to view the full list of products available for purchase.  
+    * Customers to be able to filter products by category, price or alphabetical order.  
+    * Customers to be able to select and purchase products as quick & easily as possible.  
+    * Customers to be able to add, edit, update or delete products within their shopping basket.
+    * Customers to be able to read product reviews prior to making a purchase.  
+    * Customers to be able to write product reviews after making a purchase.  
+    * Customers to be able to read our product blog about new or featured products.  
+    * To be able to maintain & update the website via an Admin panel.  
+    * To be able to add, edit, update or delete products from the website.  
+    * To be able to add, edit, update or delete blog posts from the website.  
   
 
 [:top:](#Sportmaster)

@@ -286,7 +286,8 @@ $ git clone https://github.com/StephenJ2020/Sportmaster
 # Credits  
 ------  
 * Table of contents generated with [markdown-toc](http://ecotrust-canada.github.io/markdown-toc/).
-* Favicon is taken from [Flaticon](https://www.flaticon.com/).
+* Favicon is taken from [Flaticon](https://www.flaticon.com/).  
+* Hero Image - [Homepage](https://unsplash.com/photos/Gh8QHONEHOE)  
 
 *   
   - 

@@ -19,6 +19,17 @@
     font-family: 'Lato';
 }
 
+.delivery {
+  background: url("/media/delivery.png") no-repeat center;
+  background-size: cover;
+  width: 75%;
+  height: auto;
+  min-height: 50vh;
+  bottom: 100px;
+  color: rgb(0, 0, 0);
+  font-family: 'Lato';
+}
+
 /* .header-text {
     position:absolute;
     margin: auto;

@@ -1,15 +1,44 @@
-html {
-    height: 100%;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
     scroll-behavior: smooth;
-}
+    box-sizing: border-box;
+  }
 
 
-
-.hp-hero{
-    background: url("/media/homepage-hero.jpg") no-repeat center center fixed;
+.hp-hero {
+    background: url("/media/homepage-hero.jpg") no-repeat center;
     background-size: cover;
-    
-    height: calc(100vh - 164px);
-    color: #555;
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    bottom: 100px;
+    color: rgb(0, 0, 0);
     font-family: 'Lato';
 }
+
+/* .header-text {
+    position:absolute;
+    margin: auto;
+    top: 500px;
+    left:0;
+    right: 0;
+    bottom:900px;
+    overflow-x: hidden;
+  }
+  
+  .header-container {
+   position: relative;
+   width: 100%;
+   height: 50vh;
+  } */
+
+  /* .responsive-img {
+    width: 100%;
+    height: auto;
+  } */
+
+/* Media Queries */
+

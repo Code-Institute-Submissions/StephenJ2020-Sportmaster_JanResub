@@ -49,5 +49,14 @@
     height: auto;
   } */
 
+
+  /* products.html */
+
+  .img-fluid{
+    max-width: 100%;
+    height: 359px;
+  }
+
+
 /* Media Queries */
 

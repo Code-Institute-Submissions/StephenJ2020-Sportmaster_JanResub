@@ -208,6 +208,11 @@ To create the color palette I used [Coolors](https://coolors.co/).
 ------  
 **Bugs and fixes to go here**  
 
+* Dropdown menus in Navbar not working:  
+ - I had been using the Bootstrap 4 classes rather than the updated Bootstrap 5 classes.  
+   - Thankfully I found a very helpful post on Slack by Vera which made me realise my error.  
+   ![Slack Post](static/readme/bug-data-bs-toggle.png)  
+
 
   
 [:top:](#Sportmaster)

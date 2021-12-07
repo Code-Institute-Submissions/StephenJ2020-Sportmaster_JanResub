@@ -108,20 +108,20 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'sportmaster.wsgi.application'
 
 
-Database
-https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-# commented out to switch to postgres DB below - may need to remove this code above before submission!!!!
+# Database
+# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 # DATABASES = {
-#     'default': dj_database_url('')
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
 # }
+# commented out to switch to postgres DB below - may need to remove this code above before submission!!!!
+
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
 
 
 # Password validation

@@ -14,6 +14,7 @@ load_dotenv()
 
 
 import os
+import dj_database_url
 
 from pathlib import Path
 
@@ -107,8 +108,8 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'sportmaster.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+Database
+https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -116,6 +117,11 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# commented out to switch to postgres DB below - may need to remove this code above before submission!!!!
+
+# DATABASES = {
+#     'default': dj_database_url('')
+# }
 
 
 # Password validation

@@ -1,1 +1,1 @@
-web: gunicorn sportmaster.wsgi.application
+web: gunicorn sportmaster.wsgi:application

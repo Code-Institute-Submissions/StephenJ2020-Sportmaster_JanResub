@@ -82,6 +82,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # 'django.template.context_processors.media', # ?????
+                'bag.contexts.bag_contents',
             ],
         },
     },
@@ -168,6 +170,11 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# Stripe
+FREE_DELIVERY_THRESHOLD = 65
+STANDARD_DELIVERY_PERCENTAGE = 12.50
 
 if 'USE_AWS' in os.environ:
     # Cache control

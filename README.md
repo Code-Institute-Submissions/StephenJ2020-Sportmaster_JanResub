@@ -212,6 +212,11 @@ To create the color palette I used [Coolors](https://coolors.co/).
  - I had been using the Bootstrap 4 classes rather than the updated Bootstrap 5 classes.  
    - Thankfully I found a very helpful post on Slack by Vera which made me realise my error.  
    ![Slack Post](static/readme/bug-data-bs-toggle.png)  
+  
+* Media files not loading after deployment to Heroku and AWS:  
+ - I needed to update the src file path from /media/image-name.jpg to {{ MEDIA_URL }}image-name.jpg  
+   - I found the solution to this bug on slack.  
+   ![Slack Post](static/readme/load-media-images.png)  
 
 
   

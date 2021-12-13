@@ -43,9 +43,7 @@ def add_to_bag(request, item_id):
             messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag
-    # print(request.session['bag'])
-    # above is for testing shopping bag - out will print in
-    # Gitpod terminal window when you add items via the site
+    print(request.session['bag'])
     return redirect(redirect_url)
 
 

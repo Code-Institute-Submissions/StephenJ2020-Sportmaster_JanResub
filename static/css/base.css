@@ -49,6 +49,21 @@
     height: auto;
   } */
 
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
 
   /* products.html */
 

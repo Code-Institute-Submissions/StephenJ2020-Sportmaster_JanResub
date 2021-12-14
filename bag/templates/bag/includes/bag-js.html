@@ -8,7 +8,7 @@
         form.submit();
     })
 
-    // Remove item and reload on click
+    // Remove item from bag and reload on click
     $('.remove-item').click(function(e) {
         let csrfToken = "{{ csrf_token }}";
         let itemId = $(this).attr('id').split('remove_')[1];

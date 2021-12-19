@@ -218,6 +218,19 @@ To create the color palette I used [Coolors](https://coolors.co/).
    - I found the solution to this bug on slack.  
    ![Slack Post](static/readme/load-media-images.png)  
 
+* jQuery not working properly with Bootstrap 5:  
+ - The increase / decrease button and the update and remove buttons in the shopping bag wouldn't work properly.  
+  - I search Slack for solutions and I looked at the Bootstrap documentation but I couldn't find a suitable solution. It appearead from Slack that many students have faced the same issue and that many had choosen to remove the increase / decrease buttons on desktop devices as their solution as the issue seems to be a duplicate ID with the Mobile Navbar.  
+  I chose to strip out Bootstrap 5 and revert to Bootstrap 4 as per the Boutigue Ado Walk-Through project.  
+    
+* CountyField on Models.py in checkout app cause a migration error:  
+ -   
+  - https://github.com/saleor/saleor/issues/5352  
+    https://pypi.org/project/django-countries/#countryfield  
+    https://pythonrepo.com/repo/SmileyChris-django-countries-python-django-utilities  
+    https://stackoverflow.com/questions/8484689/django-form-database-error-value-too-long-for-type-character-varying4 
+        
+
 
   
 [:top:](#Sportmaster)

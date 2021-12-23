@@ -13,12 +13,42 @@
   background-size: cover;
   width: 100%;
   height: auto;
-  height: calc(35vh - 116px);
+  height: calc(35vh - 506px);
   min-height: 25vh;
   bottom: 100px;
   color: rgb(0, 0, 0);
   font-family: 'Lato';
 }
+
+
+/* Navbar */
+
+header {
+  color: #f7f0f5;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.navbar-logo {
+  color: #f7f0f5;
+}
+
+header a{
+  color:#f7f0f5;
+  text-decoration:none;
+}
+  
+header a:hover {
+  color: #c06ed8;
+  text-decoration: none;
+}
+
+.font-size-h1 {
+  font-size: 2rem !important;
+  font-weight: 900;
+}
+
+
 
 .delivery {
 /* background: url("/media/delivery.png") no-repeat center center;
@@ -31,6 +61,9 @@ overflow: hidden;
 
 
 /* site wide*/
+
+
+
 .bg.dark-blue {
 background: #0f266c;
 }
@@ -91,9 +124,6 @@ width: 1.5rem;
 text-transform: uppercase;
 }
 
-.main-logo-link {
-width: fit-content;
-}
 
 .shop-now-button {
 background: black;
@@ -353,7 +383,7 @@ border-radius: 0;
     background-size: cover;
     width: 100%;
     height: auto;
-    height: calc(65vh - 116px);
+    /* height: calc(65vh - 116px); */
     min-height: 57vh;
     bottom: 100px;
     color: rgb(0, 0, 0);

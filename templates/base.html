@@ -49,9 +49,9 @@
     <title>Sportmaster {% block extra_title %}{% endblock %}</title>
 
 </head>
-<body>
+<body class="test">
     <header class="container-fluid fixed-top px-0">
-        <div class="row bg-primary pt-lg-2 d-none d-lg-flex w-100">
+        <div class="row bg-medium-blue p-lg-3 d-none d-lg-flex w-100"> 
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 
                 <a class="nav-link main-logo-link" href="{% url 'home' %}">
@@ -128,15 +128,7 @@
           </div>
 
     </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    {% if messages %}
+     {% if messages %}
         <section class="message-container">
             {% for message in messages %}
                 {% with message.level as level %}

@@ -48,6 +48,19 @@ header a:hover {
   font-weight: 900;
 }
 
+#main-nav {
+  background-color: #75d4fa;
+  width: 100%;
+}
+
+/* Override Bootstrap Dropdown menu */
+
+.dropdown-item {
+  font-weight: 500;
+  color: #0f366c;
+  text-align: center;
+  border-bottom: 2px solid #c06ed8;
+}
 
 
 .delivery {

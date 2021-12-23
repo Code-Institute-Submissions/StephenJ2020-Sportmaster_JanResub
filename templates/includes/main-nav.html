@@ -4,7 +4,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0 bg-light-blue" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
@@ -16,7 +16,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="menswear-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Menswear
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="menswear-link">
+            <div class="dropdown-menu border-0 bg-light-blue" aria-labelledby="menswear-link">
                 <a href="{% url 'products' %}?category=mens_clothing" class="dropdown-item">Clothing</a>
                 <a href="{% url 'products' %}?category=mens_shoes" class="dropdown-item">Shoes</a>
                 <a href="{% url 'products' %}?category=mens_accessories" class="dropdown-item">Accessories</a>
@@ -28,7 +28,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="womenswear-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Womenswear
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="womenswear-link">
+            <div class="dropdown-menu border-0 bg-light-blue" aria-labelledby="womenswear-link">
                 <a href="{% url 'products' %}?category=womens_clothing" class="dropdown-item">Clothing</a>
                 <a href="{% url 'products' %}?category=womens_shoes" class="dropdown-item">Shoes</a>
                 <a href="{% url 'products' %}?category=womens_accessories" class="dropdown-item">Accessories</a>
@@ -37,10 +37,10 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="childrenswear-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="childrenswear-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Childrenswear
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="childrenswear-link">
+            <div class="dropdown-menu border-0 bg-light-blue" aria-labelledby="childrenswear-link">
                 <a href="{% url 'products' %}?category=childrens_clothing" class="dropdown-item">Clothing</a>
                 <a href="{% url 'products' %}?category=childrens_shoes" class="dropdown-item">Shoes</a>
                 <a href="{% url 'products' %}?category=childrens_accessories" class="dropdown-item">Accessories</a>
@@ -51,7 +51,7 @@
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="sports-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sports
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="sports-link">
+            <div class="dropdown-menu border-0 bg-light-blue" aria-labelledby="sports-link">
                 <a href="{% url 'products' %}?category=football" class="dropdown-item">Football</a>
                 <a href="{% url 'products' %}?category=rugby" class="dropdown-item">Rugby</a>
                 <a href="{% url 'products' %}?category=gaa" class="dropdown-item">G.A.A.</a>

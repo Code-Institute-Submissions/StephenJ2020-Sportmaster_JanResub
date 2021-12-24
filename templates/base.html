@@ -50,7 +50,7 @@
     </head>
     <body>
         <header class="container-fluid fixed-top px-0">
-            <div class="row bg-medium-blue p-lg-3 d-none d-lg-flex w-100"> 
+            <div class="row bg-medium-blue mx-0 p-lg-3 d-none d-lg-flex w-100"> 
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     
                     <a class="navbar-logo" href="{% url 'home' %}"> <!--nav-link-->
@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-light w-100 bg-light-blue">
+                <nav class="navbar navbar-expand-lg navbar-light w-100 bg-light-blue pt-2 pb-0">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -148,8 +148,10 @@
         {% block page_header %}
         {% endblock %}
 
+            
         {% block content %}
         {% endblock %}
+                 
 
         {% block postloadjs %}
             <script type="text/javascript">

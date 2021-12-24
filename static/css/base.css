@@ -1,24 +1,29 @@
 
 * {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   border: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-.hp-hero {
-  background: url("/media/homepage-hero.jpg") no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  height: calc(35vh - 506px);
-  min-height: 25vh;
-  bottom: 100px;
-  color: rgb(0, 0, 0);
-  font-family: 'Lato';
-}
+
+/* site wide*/
+
+.bg-dark-blue {
+  /* background: #0f266c !important; */
+  background: #0f266c !important;
+  }
+  
+  .bg-medium-blue {
+  background-color: #1f35ff !important;
+  
+  }
+  
+  .bg-light-blue {
+  background-color: #75d4fa !important;
+  }
 
 
 /* Navbar */
@@ -62,48 +67,56 @@ header a:hover {
   border-bottom: 2px solid #c06ed8;
 }
 
+/* Hero Image */
+
+.hp-hero {
+  background: url("/media/homepage-hero.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  height: calc(35vh - 506px);
+  min-height: 25vh;
+  bottom: 100px;
+  color: rgb(0, 0, 0);
+  font-family: 'Lato';
+}
+
+#cta {
+  color: #0f266c;
+}
+
+.btn-shop-now {
+  color: #f7f0f5;
+  background-color: #1f35ff;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.btn-shop-now:hover {
+  color: #75d4fa;
+}
 
 .delivery {
-/* background: url("/media/delivery.png") no-repeat center center;
-background-size: cover; */
-max-width: fit-content;
-max-height: fit-content;
-min-height: 40%;
-overflow: hidden;
-}
-
-
-/* site wide*/
-
-
-
-.bg.dark-blue {
-background: #0f266c;
-}
-
-.bg-medium-blue {
-background-color: #1f35ff;
-
-}
-
-.bg-light-blue {
-background-color: #75d4fa;
-}
+  /* background: url("/media/delivery.png") no-repeat center center;
+  background-size: cover; */
+  max-width: fit-content;
+  max-height: fit-content;
+  min-height: 40%;
+  overflow: hidden;
+  }
 
 
 
 
-
-
-.shop-now-button:hover,
+/* .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-  background: #222;
-  color: white;
-}
+  background: #c06ed8;
+  color: #c06ed8;
+} */
 
 .btt-link,
 .update-link,
@@ -125,24 +138,24 @@ background-color: #75d4fa;
 
 
 /* from Bulma - ensures font awesome icons remain centered and consistent in size */
-.icon {
+/* .icon {
 align-items: center;
 display: inline-flex;
 justify-content: center;
 height: 1.5rem;
 width: 1.5rem;
-}
+} */
 
-.logo-font {
+/* .logo-font {
 text-transform: uppercase;
-}
+} */
 
-
+/* 
 .shop-now-button {
 background: black;
 color: white;
 min-width: 260px;
-}
+} */
 
 .btn-black {
 background: black;
@@ -279,9 +292,9 @@ overflow-y: auto;
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-.container {
-  max-width: 80%;
-}
+  .container {
+    max-width: 80%;
+  }
 }
 
 
@@ -336,54 +349,24 @@ border-color: #222;
 }
 
 .allauth-form-inner-content a {
-color: #17a2b8; /* text-info */
+color: #75d4fa; /* text-info */
 }
 
-
-
-/* Product Form */
-
-/* .btn-file {
-position: relative;
-overflow: hidden;
-}
-
-.btn-file input[type="file"] {
-position: absolute;
-top: 0;
-right: 0;
-min-width: 100%;
-min-height: 100%;
-opacity: 0;
-cursor: pointer;
-} */
 
 .custom-checkbox .custom-control-label::before {
 border-radius: 0;
-border-color: #dc3545;
+border-color: #d12323;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-background-color: #dc3545;
-border-color: #dc3545;
+background-color: #d12323;
+border-color: #d12323;
 border-radius: 0;
 }
 
 
 
 
-
-
-/* pad the top a bit when navbar is collapsed on mobile */
-/* @media (max-width: 991px) {
-.header-container {
-    padding-top: 116px;
-}
-
-  body {
-      height: calc(100vh - 116px);
-  }
-} */
 
 /************************************************************************************************************************************************************/
 
@@ -397,7 +380,7 @@ border-radius: 0;
     width: 100%;
     height: auto;
     /* height: calc(65vh - 116px); */
-    min-height: 57vh;
+    min-height: 60vh;
     bottom: 100px;
     color: rgb(0, 0, 0);
     font-family: 'Lato';

@@ -106,12 +106,14 @@ header a:hover {
 }
 
 .delivery {
-  /* background: url("/media/delivery.png") no-repeat center center;
-  background-size: cover; */
   max-width: fit-content;
   max-height: fit-content;
   min-height: 40%;
   overflow: hidden;
+  }
+
+  .page-margin {
+    margin-top: 12rem;
   }
 
 

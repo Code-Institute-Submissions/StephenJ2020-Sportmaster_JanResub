@@ -96,6 +96,12 @@ header a:hover {
   color: #75d4fa;
 }
 
+.card-wrapper {
+  border: 15px solid #f7f0f5;
+  margin-bottom: 1rem;
+  width: 18rem;
+}
+
 .delivery {
   /* background: url("/media/delivery.png") no-repeat center center;
   background-size: cover; */
@@ -372,18 +378,53 @@ border-radius: 0;
 
 /* Media Queries */
 
-/* Increase VH of hero image on desktops */
+
 @media (min-width: 992px) {
   .hp-hero {
     background: url("/media/homepage-hero.jpg") no-repeat center;
     background-size: cover;
     width: 100%;
     height: auto;
-    /* height: calc(65vh - 116px); */
     min-height: 60vh;
     bottom: 100px;
     color: rgb(0, 0, 0);
     font-family: 'Lato';
+  }
+  .card-wrapper {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 24rem;
+  }
+  .card-wrapper-pa {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 44rem;
+  }
+}
+
+@media (min-width: 1260px) {
+  .card-wrapper {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 27rem;
+  }
+  .card-wrapper-pa {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 72rem;
+  }
+}
+
+@media (min-width: 1608px) {
+  .card-wrapper {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 36rem;
+  }
+  .card-wrapper-pa {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 72rem;
   }
 }
 

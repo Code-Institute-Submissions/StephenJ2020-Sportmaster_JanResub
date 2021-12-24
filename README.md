@@ -312,7 +312,8 @@ $ git clone https://github.com/StephenJ2020/Sportmaster
 * Favicon is taken from [Flaticon](https://www.flaticon.com/).  
 * Hero Image - [Homepage]() 
 *   " [Homepage](https://unsplash.com/photos/lrQPTQs7nQQ)  
-* Delivery - [pinterest](https://www.pinterest.ie/pin/311381761732525673/)  
+* Delivery - [pinterest](https://www.pinterest.ie/pin/311381761732525673/) 
+* Category Card Img - Product Announcements [Austin chan](https://unsplash.com/photos/ukzHlkoz1IE) 
   
 * Menswear:   
   - Category Card Img [Jonathan Borba](https://unsplash.com/photos/R0y_bEUjiOM)  

@@ -14,17 +14,20 @@
 .bg-dark-blue {
   /* background: #0f266c !important; */
   background: #0f266c !important;
-  }
+}
   
-  .bg-medium-blue {
-  background-color: #1f35ff !important;
-  
-  }
-  
-  .bg-light-blue {
-  background-color: #75d4fa !important;
-  }
+.bg-medium-blue {
+background-color: #1f35ff !important;
 
+}
+
+.bg-light-blue {
+background-color: #75d4fa !important;
+}
+
+.text-light-blue {
+  color: #75d4fa;
+}
 
 /* Navbar */
 
@@ -112,17 +115,63 @@ header a:hover {
   }
 
 
+  /* Media Queries */
 
 
-/* .shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-  background: #c06ed8;
-  color: #c06ed8;
-} */
+@media (min-width: 992px) {
+  .hp-hero {
+    background: url("/media/homepage-hero.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    min-height: 60vh;
+    bottom: 100px;
+    color: rgb(0, 0, 0);
+    font-family: 'Lato';
+  }
+  .card-wrapper {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 24rem;
+  }
+  .card-wrapper-pa {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 44rem;
+  }
+}
+
+@media (min-width: 1260px) {
+  .card-wrapper {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 27rem;
+  }
+  .card-wrapper-pa {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 72rem;
+  }
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1608px) {
+  .card-wrapper {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 36rem;
+  }
+  .card-wrapper-pa {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 72rem;
+  }
+}
+
+
+/* CSS styling taken from the CI Boutique Ado walk through project / Bootstrap / AllAuth */
 
 .btt-link,
 .update-link,
@@ -138,31 +187,6 @@ header a:hover {
 }
 
 
-
-
-
-
-
-/* from Bulma - ensures font awesome icons remain centered and consistent in size */
-/* .icon {
-align-items: center;
-display: inline-flex;
-justify-content: center;
-height: 1.5rem;
-width: 1.5rem;
-} */
-
-/* .logo-font {
-text-transform: uppercase;
-} */
-
-/* 
-.shop-now-button {
-background: black;
-color: white;
-min-width: 260px;
-} */
-
 .btn-black {
 background: black;
 color: white;
@@ -174,15 +198,6 @@ color: black !important; /* use important to override link colors for <a> elemen
 border: 1px solid black;
 }
 
-/* .shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-background: #222;
-color: white;
-} */
 
 .text-black {
 color: #000 !important;
@@ -195,16 +210,6 @@ border: 1px solid black !important;
 .bg-black {
 background-color: #000 !important;
 }
-/* 
-.overlay {
-height: 100%;
-width: 100%;
-top: 0;
-left: 0;
-position: fixed;
-background: white;
-z-index: -1;
-} */
 
 a.category-badge > span.badge:hover {
 background: #212529 !important;
@@ -294,16 +299,6 @@ overflow-y: auto;
 }
 
 
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
-
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -358,7 +353,6 @@ border-color: #222;
 color: #75d4fa; /* text-info */
 }
 
-
 .custom-checkbox .custom-control-label::before {
 border-radius: 0;
 border-color: #d12323;
@@ -369,64 +363,3 @@ background-color: #d12323;
 border-color: #d12323;
 border-radius: 0;
 }
-
-
-
-
-
-/************************************************************************************************************************************************************/
-
-/* Media Queries */
-
-
-@media (min-width: 992px) {
-  .hp-hero {
-    background: url("/media/homepage-hero.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    min-height: 60vh;
-    bottom: 100px;
-    color: rgb(0, 0, 0);
-    font-family: 'Lato';
-  }
-  .card-wrapper {
-    border: 15px solid #f7f0f5;
-    margin-bottom: 1rem;
-    width: 24rem;
-  }
-  .card-wrapper-pa {
-    border: 15px solid #f7f0f5;
-    margin-bottom: 1rem;
-    width: 44rem;
-  }
-}
-
-@media (min-width: 1260px) {
-  .card-wrapper {
-    border: 15px solid #f7f0f5;
-    margin-bottom: 1rem;
-    width: 27rem;
-  }
-  .card-wrapper-pa {
-    border: 15px solid #f7f0f5;
-    margin-bottom: 1rem;
-    width: 72rem;
-  }
-}
-
-@media (min-width: 1608px) {
-  .card-wrapper {
-    border: 15px solid #f7f0f5;
-    margin-bottom: 1rem;
-    width: 36rem;
-  }
-  .card-wrapper-pa {
-    border: 15px solid #f7f0f5;
-    margin-bottom: 1rem;
-    width: 72rem;
-  }
-}
-
-
-

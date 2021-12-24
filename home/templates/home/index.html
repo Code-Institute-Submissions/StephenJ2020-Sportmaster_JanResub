@@ -100,16 +100,55 @@
                 </div>
             </div>
         </div>
-
     </section>
-    <div class="container delivery my-5">
+
+    <div class="container delivery my-5 d-md-none">
+        <div class="row mt-3">
+            <div class="col d-md-none my-3">
+                <div class="card card-wrapper ml-lg-2">
+                    <img src="{{ MEDIA_URL }}delivery.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FREE Delivery*</h5>
+                        <p class="card-text">* Get FREE Delivery when you spend $65 or more!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container delivery pl-5 mr-5 my-5 d-none d-md-flex">
         <div class="row my-3">
-            <div class="col-10 col-md-6 col-lg-4">
+            <div class="col text-center">
                 <h4 class="my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
                 <img src="{{ MEDIA_URL }}delivery.png" alt="Colourful sketch of a delivery van">
             </div>
         </div>
     </div>
+
+    <footer class="container-fluid bg-dark-blue mb-0 p-5 text-center">
+        <div class="container justify-content-center">
+            <div class="col-12"> 
+                <p class="text-uppercase text-light text-center">Follow Us on Social Media</p>
+                <ul>
+                    <li class="list-inline-item mr-3">
+                        <a href="https://www.facebook.com/" target="_blank" title="Facebook" rel="noreferrer">
+                            <i class="fab fa-facebook-f fa-3x text-light-blue" aria-hidden="true"><span class="sr-only">Facebook</span></i> 
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-3 mx-md-5">
+                        <a href="https://www.instagram.com/" target="_blank" title="Instagram" rel="noreferrer">
+                            <i class="fab fa-instagram fa-3x text-light-blue" aria-hidden="true"><span class="sr-only">Instagram</span></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item ml-3">
+                        <a href="https://twitter.com/?lang=en" target="_blank" title="Twitter" rel="noreferrer">
+                            <i class="fab fa-twitter fa-3x text-light-blue" aria-hidden="true"><span class="sr-only">Twitter</span></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 {% endblock %}
 
 

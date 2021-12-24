@@ -3,14 +3,14 @@
 
 {% block page_header %}
     <div class="container-fluid mt-5 pt-5 hp-hero">
-        <div class="row">
-            <div class="col-7 col-md-6">
-                <h1 class="display-4">
-                    Checkout our full range here!
+        <div class="row mt-5">
+            <div class="col-7 col-md-6" id="cta">
+                <h1 class="d-none d-lg-flex display-3 mt-5 pt-5 ml-5">
+                    Fitness Is Life!
                 </h1>
-                <div class="my-4">
+                <div class="mt-0 my-md-4">
                     <p>
-                        <a href="" class="btn-shop-now btn btn-lg rounded-0 py-3 fs-3">SHOP NOW!</a>
+                        <a href="{% url 'products' %}" class="btn-shop-now btn btn-lg rounded-1 m-2 m-md-5 p-2">SHOP NOW!</a>
                     </p>
                 </div>
             </div>
@@ -19,84 +19,101 @@
 {% endblock %}
 
 {% block content %}
-   <div class="container bg-dark-blue my-5">
-       <div class="row mt-3">
-           <div class="col my-3">
-               <div class="card" style="width: 18rem;">
-                   <img src="{{ MEDIA_URL }}homepage-hero1.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                       <h5 class="card-title">Menswear</h5>
-                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                           the card's content.</p>
-                       <a href="{% url 'products' %}?category=mens_clothing,mens_shoes,mens_accessories" class="btn btn-primary">Shop Menswear</a>
-                   </div>
-               </div>
-           </div>
-           <div class="col my-3">
-               <div class="card" style="width: 18rem;">
-                   <img src="{{ MEDIA_URL }}homepage-hero.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                       <h5 class="card-title">Womenswear</h5>
-                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                           the card's content.</p>
-                       <a href="{% url 'products' %}?category=womens_clothing,womens_shoes,womens_accessories" class="btn btn-primary">Shop Womenswear</a>
-                   </div>
-               </div>
-           </div>
-           <div class="col my-3">
-               <div class="card" style="width: 18rem;">
-                   <img src="{{ MEDIA_URL }}homepage-hero1.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                       <h5 class="card-title">Childrenswear</h5>
-                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                           the card's content.</p>
-                       <a href="{% url 'products' %}?category=childrens_clothing,childrens_shoes,childrens_accessories" class="btn btn-primary">Shop Childrenswear</a>
-                   </div>
-               </div>
-           </div>
-       </div>
-       <div class="row mt-3">
-           <div class="col my-3">
-               <div class="card" style="width: 18rem;">
-                   <img src="{{ MEDIA_URL }}homepage-hero.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                       <h5 class="card-title">Sports</h5>
-                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                           the card's content.</p>
-                       <a href="{% url 'products' %}?category=football,rugby,gaa" class="btn btn-primary">Shop Sports</a>
-                   </div>
-               </div>
-           </div>
-           <div class="col my-3">
-               <div class="card" style="width: 18rem;">
-                   <img src="{{ MEDIA_URL }}homepage-hero1.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                       <h5 class="card-title">Card title</h5>
-                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                           the card's content.</p>
-                       <a href="#" class="btn btn-primary">Go somewhere</a>
-                   </div>
-               </div>
-           </div>
-           <div class="col my-3">
-               <div class="card" style="width: 18rem;">
-                   <img src="{{ MEDIA_URL }}homepage-hero.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                       <h5 class="card-title">Card title</h5>
-                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                           the card's content.</p>
-                       <a href="#" class="btn btn-primary">Go somewhere</a>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-   <div class="container delivery my-5">
-       <div class="row my-3">
-           <div class="col-10 col-md-6 col-lg-4">
-            <h4 class="my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
+    <br class="d-none d-md-flex">
+    <section class="container-fluid bg-dark-blue my-3 my-lg-5 py-3 py-lg-5" >
+        <div class="container bg-medium-blue my-3 py-3 py-lg-5">
+            <div class="row mt-3">
+                <div class="col my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ MEDIA_URL }}homepage-hero1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Menswear</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="{% url 'products' %}?category=mens_clothing,mens_shoes,mens_accessories"
+                                class="btn btn-primary">Shop Menswear</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ MEDIA_URL }}homepage-hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Womenswear</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="{% url 'products' %}?category=womens_clothing,womens_shoes,womens_accessories"
+                                class="btn btn-primary">Shop Womenswear</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ MEDIA_URL }}homepage-hero1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Childrenswear</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="{% url 'products' %}?category=childrens_clothing,childrens_shoes,childrens_accessories"
+                                class="btn btn-primary">Shop Childrenswear</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ MEDIA_URL }}homepage-hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sports</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="{% url 'products' %}?category=football,rugby,gaa" class="btn btn-primary">Shop
+                                Sports</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ MEDIA_URL }}homepage-hero1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ MEDIA_URL }}homepage-hero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- <div class="container delivery my-5">
+        <div class="row my-3">
+            <div class="col-10 col-md-6 col-lg-4">
+                <h4 class="my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
                 <img src="{{ MEDIA_URL }}delivery.png" alt="Colourful sketch of a delivery van">
-           </div>
-       </div>
-   </div>
+            </div>
+        </div>
+    </div> -->
 {% endblock %}
+
+
+

@@ -1,4 +1,4 @@
-[![Mock-up](assets/images/mock-up.png)](https://github.com/StephenJ2020/Sportmaster/index.html) 
+[![Mock-up](static/readme/mock-up.png)](https://github.com/StephenJ2020/Sportmaster/index.html) 
 
 [Sportmaster - Live Site](https://github.com/StephenJ2020/Sportmaster/index.html)  
 
@@ -14,7 +14,7 @@ The Milestone 4 project assignment is to build a full-stack site based around bu
 . Build a ﬁtness subscription application     
 . Build a site to sell your graphic design services   
     
-I have decided to create a   
+I have decided to create an eCommerce site for a local sports shop called Sportmaster.  This is a small family run business who don't currently have a website but they did use Facebook during the various pandemic related lockdowns to offer a "click & collect" service.  This highlighted to me their clear need for a fully functioning eCommerce website.
    
 ## Project Requirements   
  
@@ -164,7 +164,7 @@ The app consists of ........
 -----
 ### Color Scheme  
   
-I have chosen a very bright and vibrant colour palette to reflect the active and sporty nature of the products being sold via the site by Sportmaster.  
+I have chosen a very bright and vibrant colour palette to reflect the active and sporty nature of the products being sold via the site by Sportmaster.  Plus the sporting colours of the local Celbridge G.A.A. and football teams are white and blue so my colour scheme reflects this.  
 ![color palette](./static/readme/colour-palette.png)  
 To create the color palette I used [Coolors](https://coolors.co/).  
 
@@ -385,8 +385,9 @@ $ git clone https://github.com/StephenJ2020/Sportmaster
 
 # Acknowledgements  
 ------  
-*  
-*   
+*  As always I wish to thank my Mentor Chris Quinn for all his patience, support and advice, I couldn't have asked for a better Mentor - Thank you Chris!  
+*  The wonderful Code Institute Tutor Support team   
+*  My colleague and peers in the Slack Community who are always there to offer their support and advice and some general good cheer on the tougher days!  
 
   
 

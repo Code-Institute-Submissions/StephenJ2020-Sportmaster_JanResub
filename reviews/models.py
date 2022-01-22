@@ -1,17 +1,21 @@
+""" Review Model """
+
 from django.db import models
-from django.utils import timezone
-from profiles.models import UserProfile
+from django.contrib.auth.models import User
+from products.models import Product
 
 
 class Review(models.Model):
-    """
-    Model to define the fields required to be displayed in reviews.
-    """
-    title = models.CharField(max_length=200)
-    comments = models.TextField()
-    creator = models.ForeignKey(
-        UserProfile, on_delete=models.CASCADE, blank=True, null=True)
-    date_created = models.DateTimeField(default=timezone.now)
+    """ Review's Model """
+    username = models.ForeignKey(
+        User, related_name="reviews", on_delete=models.CASCADE,
+        null=True, blank=True)
+    products = models.ForeignKey(
+        Product, related_name="reviews", on_delete=models.CASCADE)
+    created = models.DateField(auto_now_add=True)
+    updated = models.DateField(auto_now=True)
+    title = models.CharField(max_length=255)
+    review = models.TextField(max_length=500)
 
     def __str__(self):
-        return self.title
+        return str(self.title)

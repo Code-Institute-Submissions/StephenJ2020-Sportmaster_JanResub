@@ -8,9 +8,9 @@
     <div class="row custom-row">
     <div class="col l10 offset-l1  s12 m10">
         <div class="card home-card ">
-            <div class="card-content center-align review-card-content">
+            <!-- <div class="card-content center-align review-card-content">
                 <h3 class="card-title review-card-title">{{ review.title }}</h3>
-            </div>
+            </div> -->
             <div class="card-action center-align">
                 <p class="center-align"><span class="highlight"> Review </span><br></p>
                 <p class="center-align"><span class="highlight"> Date </span><br></p>

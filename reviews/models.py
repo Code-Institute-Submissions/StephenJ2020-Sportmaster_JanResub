@@ -14,8 +14,11 @@ class Review(models.Model):
         Product, related_name="reviews", on_delete=models.CASCADE)
     created = models.DateField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
-    title = models.CharField(max_length=255)
     review = models.TextField(max_length=500)
 
     def __str__(self):
+        # return f"Review on {self.product.name} by {self.user}"
         return str(self.title)
+
+    class Meta:
+        ordering = ['id']

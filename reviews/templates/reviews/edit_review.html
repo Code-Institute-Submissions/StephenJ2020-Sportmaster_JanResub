@@ -11,22 +11,24 @@
 {% endblock %}
 
 {% block content %}
+<!--overlay-->
+<div class="overlay"></div>
 <div class="container">
     <div class="row">
         <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 mt-5 mb-3">
-            <h2 class="text-center">Add Review</h2>
+            <h2 class="text-center">Edit Review</h2>
         </div>
     </div>
-    <!--review form for the user to add a review-->
+    <!-- form that allows the user to edit-->
     <div class="row pb-5">
         <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 p-5 form-bg">
-            <form method="POST" action="{% url 'add_review' product.id %}" class="form"
+            <form method="POST" action="{% url 'edit_review' review.id %}" class="form mb-2"
                 enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
+                <!--buttons to update or cancel the process-->
                 <div class="text-center">
-                    
-                    <button class="btn btn-blue rounded-0 btn-dark mt-3 mr-3" type="submit">Add Review</button>
+                    <button class="btn rounded-0 btn-dark mt-3 mr-3" type="submit">Update</button>
                     <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-red btn-danger mt-3 ml-3">Cancel</a>
                 </div>
             </form>

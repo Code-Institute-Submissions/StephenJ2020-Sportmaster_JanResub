@@ -1,5 +1,6 @@
 """ Views for Reading, Creating, Updating and Removing Reviwes """
 
+<<<<<<< HEAD
 # from django.shortcuts import render, reverse, redirect, get_object_or_404
 # from django.contrib.auth.decorators import login_required
 # from django.contrib import messages
@@ -116,18 +117,21 @@
 #     return redirect(reverse('reviews_total'))
 
 
+=======
+>>>>>>> aebfb7de8b542e76a323e3985274197b850baa1b
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.contrib.auth.decorators import login_required
-from .forms import ReviewForm
-from .models import Review
-from django.contrib.auth.models import User
-from products.models import Product
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+
+from .models import Review
+from .forms import ReviewForm
+from products.models import Product
+from profiles.models import UserProfile
 
 
-# Adapted from: https://www.youtube.com/watch?v=lSX8nzu9ozg
 @login_required
 def add_review(request, product_id):
+<<<<<<< HEAD
     # adds a review to the site
     product = Product.objects.get(id=product_id)
     if not request.user.is_authenticated:
@@ -148,9 +152,76 @@ def add_review(request, product_id):
                 messages.success(request,
                                  'You have successfully added a review')
                 return redirect('product_details', product.id)
+=======
+    """
+    Add a review to a product
+    """
+    product = get_object_or_404(Product, pk=product_id)
+    user = get_object_or_404(UserProfile, user=request.user)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            title = form.cleaned_data['title']
+            description = form.cleaned_data['description']
+            rating = form.cleaned_data['rating']
+            Review.objects.create(
+                user=user,
+                product=get_object_or_404(Product, pk=product_id),
+                title=title,
+                rating=rating,
+                description=description)
+            messages.success(request, 'Successfully added review.')
+            return redirect(reverse('product_detail', args=[product_id]))
+>>>>>>> aebfb7de8b542e76a323e3985274197b850baa1b
         else:
-            form = ReviewForm()
-        return render(request, 'products/product_details.html', {"form": form})
+            messages.error(request, 'Failed to add review. \
+                    Please check the form is valid and try again.')
     else:
-        messages.error(request, 'Please sign in to leave a review')
-        return redirect('account_login')
+        form = ReviewForm()
+    template = 'reviews/add_review.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def edit_review(request, review_id):
+    """
+    Edit a review to a product
+    """
+    review = get_object_or_404(Review, pk=review_id)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully edited review.')
+            return redirect(
+                reverse('product_detail', args=(review.product.id,)))
+        else:
+            messages.error(request, 'Failed to edit review. \
+                    Please check the form is valid and try again.')
+    else:
+        form = ReviewForm(instance=review)
+
+    template = "reviews/edit_review.html"
+    context = {
+        "form": form,
+        "review": review,
+        "product": review.product,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_review(request, review_id):
+    """
+    Delete a review for a product
+    """
+    review = get_object_or_404(Review, pk=review_id)
+    review.delete()
+    messages.success(request, 'Review deleted!')
+    return redirect(reverse('product_detail', args=(review.product.id,)))

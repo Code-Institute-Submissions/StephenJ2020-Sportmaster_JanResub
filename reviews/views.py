@@ -1,5 +1,3 @@
-""" Views for Reading, Creating, Updating and Removing Reviwes """
-
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -12,25 +10,21 @@ from profiles.models import UserProfile
 
 @login_required
 def add_review(request, product_id):
-    # adds a review to the site
-    product = Product.objects.get(id=product_id)
-    if not request.user.is_authenticated:
-        messages.error(request,
-                       'Sorry, only logged in members may leave a review')
-        return redirect(reverse('home'))
-
-    if request.user.is_authenticated:
-        if request.method == "POST":
-            form = ReviewForm(request.POST)
-            if form.is_valid():
-                review = form.save(commit=False)
-                review.user = request.user
-                review.comment = request.POST['comment']
-                review.product = product
-                review.save()
-                messages.success(request,
-                                 'You have successfully added a review')
-                return redirect('product_details', product.id)
+    """
+    Add a product review
+    """
+    product = get_object_or_404(Product, pk=product_id)
+    user = get_object_or_404(UserProfile, user=request.user)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            description = form.cleaned_data['description']
+            Review.objects.create(
+                user=user,
+                product=get_object_or_404(Product, pk=product_id),
+                description=description)
+            messages.success(request, 'Successfully added review.')
+            return redirect(reverse('product_detail', args=[product_id]))
         else:
             messages.error(request, 'Failed to add review. \
                     Please check the form is valid and try again.')
@@ -48,7 +42,7 @@ def add_review(request, product_id):
 @login_required
 def edit_review(request, review_id):
     """
-    Edit a review to a product
+    Edit a product review
     """
     review = get_object_or_404(Review, pk=review_id)
     if request.method == 'POST':
@@ -77,7 +71,7 @@ def edit_review(request, review_id):
 @login_required
 def delete_review(request, review_id):
     """
-    Delete a review for a product
+    Delete a product review
     """
     review = get_object_or_404(Review, pk=review_id)
     review.delete()

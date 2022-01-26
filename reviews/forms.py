@@ -8,21 +8,7 @@ class ReviewForm(forms.ModelForm):
     """
     class Meta:
         model = Review
-<<<<<<< HEAD
         fields = ('review',)
-=======
-        exclude = (
-            'user',
-            'date_added',
-            'product',
-        )
-
-        fields = ['title', 'description', 'rating']
-
-        labels = {
-            'rating': 'Rating',
-        }
->>>>>>> aebfb7de8b542e76a323e3985274197b850baa1b
 
     def __init__(self, *args, **kwargs):
         """

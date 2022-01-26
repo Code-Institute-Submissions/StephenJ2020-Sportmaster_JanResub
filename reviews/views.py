@@ -12,7 +12,7 @@
 # def product_review(request):
 #     """ View for all reviews """
 
-#     reviews = Review.objects.all() 
+#     reviews = Review.objects.all()
 #     sort = None
 #     direction = None
 
@@ -141,7 +141,6 @@ def add_review(request, product_id):
             if form.is_valid():
                 review = form.save(commit=False)
                 review.user = request.user
-                review.title = request.POST['title']
                 review.comment = request.POST['comment']
                 review.rating = int(request.POST['rating'])
                 review.product = product

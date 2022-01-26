@@ -8,7 +8,7 @@ class ReviewAdmin(admin.ModelAdmin):
         'products',
         'created',
         'updated',
-        'title',
+        # 'title',
         'review',
     )
 

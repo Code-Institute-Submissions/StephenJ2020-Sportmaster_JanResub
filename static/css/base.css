@@ -1,160 +1,179 @@
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+/* site wide*/
+
+.bg-dark-blue {
+  /* background: #0f266c !important; */
+  background: #0f266c !important;
+}
+  
+.bg-medium-blue {
+background-color: #1f35ff !important;
+
+}
+
+.bg-light-blue {
+background-color: #75d4fa !important;
+}
+
+.text-light-blue {
+  color: #75d4fa;
+}
+
+/* Navbar */
+
+header {
+  color: #f7f0f5;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.navbar-logo {
+  color: #f7f0f5;
+}
+
+header a{
+  color:#f7f0f5;
+  text-decoration:none;
+}
+  
+header a:hover {
+  color: #c06ed8;
+  text-decoration: none;
+}
+
+.font-size-h1 {
+  font-size: 2rem !important;
+  font-weight: 900;
+}
+
+#main-nav {
+  background-color: #75d4fa;
+  width: 100%;
+}
+
+/* Override Bootstrap Dropdown menu */
+
+.dropdown-item {
+  font-weight: 500;
+  color: #0f366c;
+  text-align: center;
+  border-bottom: 2px solid #c06ed8;
+}
+
+/* Hero Image */
 
 .hp-hero {
-    background: url("/media/homepage-hero.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    min-height: 50vh;
-    bottom: 100px;
-    color: rgb(0, 0, 0);
-    font-family: 'Lato';
+  background: url("/media/homepage-hero.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  height: calc(35vh - 506px);
+  min-height: 25vh;
+  bottom: 100px;
+  color: rgb(0, 0, 0);
+  font-family: 'Lato';
+}
+
+#cta {
+  color: #0f266c;
+}
+
+.btn-shop-now {
+  color: #f7f0f5;
+  background-color: #1f35ff;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.btn-shop-now:hover {
+  color: #75d4fa;
+}
+
+.card-wrapper {
+  border: 15px solid #f7f0f5;
+  margin-bottom: 1rem;
+  width: 18rem;
 }
 
 .delivery {
-  /* background: url("/media/delivery.png") no-repeat center center;
-  background-size: cover; */
   max-width: fit-content;
   max-height: fit-content;
   min-height: 40%;
   overflow: hidden;
-}
-
-/* .header-text {
-    position:absolute;
-    margin: auto;
-    top: 500px;
-    left:0;
-    right: 0;
-    bottom:900px;
-    overflow-x: hidden;
   }
-  
-  .header-container {
-   position: relative;
-   width: 100%;
-   height: 50vh;
-  } */
 
-  /* .responsive-img {
+  .page-margin {
+    margin-top: 12rem;
+  }
+
+
+  /* Media Queries */
+
+
+@media (min-width: 992px) {
+  .hp-hero {
+    background: url("/media/homepage-hero.jpg") no-repeat center;
+    background-size: cover;
     width: 100%;
     height: auto;
-  } */
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-}
-
-.btt-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
-}
-
-  /* products.html */
-
-  .img-fluid{
-    max-width: 90%;
-    height: 359px;
+    min-height: 60vh;
+    bottom: 100px;
+    color: rgb(0, 0, 0);
+    font-family: 'Lato';
   }
-
-
-  
-
-
-
-  
-/* from Bulma - ensures font awesome icons remain centered and consistent in size */
-.icon {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
+  .card-wrapper {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 24rem;
+  }
+  .card-wrapper-pa {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 44rem;
+  }
 }
 
-.logo-font {
-  text-transform: uppercase;
+@media (min-width: 1260px) {
+  .card-wrapper {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 27rem;
+  }
+  .card-wrapper-pa {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 72rem;
+  }
+  .container {
+    max-width: 80%;
+  }
 }
 
-.main-logo-link {
-  width: fit-content;
+@media (min-width: 1608px) {
+  .card-wrapper {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 36rem;
+  }
+  .card-wrapper-pa {
+    border: 15px solid #f7f0f5;
+    margin-bottom: 1rem;
+    width: 72rem;
+  }
 }
 
-.shop-now-button {
-  background: black;
-  color: white;
-  min-width: 260px;
-}
 
-.btn-black {
-  background: black;
-  color: white;
-}
-
-.btn-outline-black {
-  background: white;
-  color: black !important; /* use important to override link colors for <a> elements */
-  border: 1px solid black;
-}
-
-/* .shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-  background: #222;
-  color: white;
-} */
-
-.text-black {
-  color: #000 !important;
-}
-
-.border-black {
-  border: 1px solid black !important;
-}
-
-.bg-black {
-  background-color: #000 !important;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: white;
-  z-index: -1;
-}
-
-a.category-badge > span.badge:hover {
-  background: #212529 !important;
-  color: #fff !important;
-}
-
-.btt-button {
-  height: 42px;
-  width: 42px;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
+/* CSS styling taken from the CI Boutique Ado walk through project / Bootstrap / AllAuth */
 
 .btt-link,
 .update-link,
@@ -162,195 +181,187 @@ a.category-badge > span.badge:hover {
   cursor: pointer;
 }
 
+/* products.html */
+
+.img-fluid{
+  max-width: 90%;
+  height: 359px;
+}
+
+
+.btn-black {
+background: black;
+color: white;
+}
+
+.btn-outline-black {
+background: white;
+color: black !important; /* use important to override link colors for <a> elements */
+border: 1px solid black;
+}
+
+
+.text-black {
+color: #000 !important;
+}
+
+.border-black {
+border: 1px solid black !important;
+}
+
+.bg-black {
+background-color: #000 !important;
+}
+
+a.category-badge > span.badge:hover {
+background: #212529 !important;
+color: #fff !important;
+}
+
+.btt-button {
+height: 42px;
+width: 42px;
+position: fixed;
+bottom: 10px;
+right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+cursor: pointer;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
-  position: fixed;
-  top: 72px;
-  right: 15px;
-  z-index: 99999999999;
+position: fixed;
+top: 72px;
+right: 15px;
+z-index: 99999999999;
 }
 
 .custom-toast {
-  overflow: visible;
+overflow: visible;
 }
 
 .toast-capper {
-  height: 2px;
+height: 2px;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-  width: 0; 
-  height: 0; 
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent; 
-  border-bottom: 10px solid black;
-  position: absolute;
-  top: -10px;
-  right: 36px;
+width: 0; 
+height: 0; 
+border-left: 4px solid transparent;
+border-right: 4px solid transparent; 
+border-bottom: 10px solid black;
+position: absolute;
+top: -10px;
+right: 36px;
 }
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
-  border-bottom-color: #007bff !important;
+border-bottom-color: #007bff !important;
 }
 
 .arrow-secondary {
-  border-bottom-color: #6c757d !important;
+border-bottom-color: #6c757d !important;
 }
 
 .arrow-success {
-  border-bottom-color: #28a745 !important;
+border-bottom-color: #28a745 !important;
 }
 
 .arrow-danger {
-  border-bottom-color: #dc3545 !important;
+border-bottom-color: #dc3545 !important;
 }
 
 .arrow-warning {
-  border-bottom-color: #ffc107 !important;
+border-bottom-color: #ffc107 !important;
 }
 
 .arrow-info {
-  border-bottom-color: #17a2b8 !important;
+border-bottom-color: #17a2b8 !important;
 }
 
 .arrow-light {
-  border-bottom-color: #f8f9fa !important;
+border-bottom-color: #f8f9fa !important;
 }
 
 .arrow-dark {
-  border-bottom-color: #343a40 !important;
+border-bottom-color: #343a40 !important;
 }
 
 .bag-notification-wrapper {
-  height: 100px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+height: 100px;
+overflow-x: hidden;
+overflow-y: auto;
 }
 
 
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-  margin-top: 1.5rem; /* mt-4 */
-  color: #6c757d; /* text-secondary */
+margin-top: 8.5rem; /* mt-4 */
+color: #6c757d; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
-  border-color: #000;
-  border-radius: 0;
+border-color: #000;
+border-radius: 0;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
-  display: none;
+display: none;
 }
 
 .allauth-form-inner-content input::placeholder {
-  color: #aab7c4;
+color: #aab7c4;
 }
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
 /* btn */
 display: inline-block;
-  font-weight: 400;
-  color: #fff;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #000;
-  border: 1px solid #000;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0;
+font-weight: 400;
+color: #fff;
+text-align: center;
+vertical-align: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-color: #000;
+border: 1px solid #000;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: 0;
 
-  /* standard bootstrap btn transitions */
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+/* standard bootstrap btn transitions */
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 color: #fff;
-  background-color: #222;
-  border-color: #222;
+background-color: #222;
+border-color: #222;
 }
 
 .allauth-form-inner-content a {
-color: #17a2b8; /* text-info */
+color: #75d4fa; /* text-info */
 }
-
-
-
-/* Product Form */
-
-/* .btn-file {
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-file input[type="file"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0;
-  cursor: pointer;
-} */
 
 .custom-checkbox .custom-control-label::before {
-  border-radius: 0;
-  border-color: #dc3545;
+border-radius: 0;
+border-color: #d12323;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-  background-color: #dc3545;
-  border-color: #dc3545;
-  border-radius: 0;
+background-color: #d12323;
+border-color: #d12323;
+border-radius: 0;
 }
-
-
-
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-  .fixed-top-desktop-only {
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 1030;
-  }
-
-  .header-container {
-      padding-top: 164px;
-  }
-}
-
-/* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
-  .header-container {
-      padding-top: 116px;
-  }
-
-  /* body {
-      height: calc(100vh - 116px);
-  } */
-}
-

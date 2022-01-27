@@ -1,4 +1,4 @@
-[![Mock-up](assets/images/mock-up.png)](https://github.com/StephenJ2020/Sportmaster/index.html) 
+[![Mock-up](static/readme/mock-up.png)](https://github.com/StephenJ2020/Sportmaster/index.html) 
 
 [Sportmaster - Live Site](https://github.com/StephenJ2020/Sportmaster/index.html)  
 
@@ -14,7 +14,7 @@ The Milestone 4 project assignment is to build a full-stack site based around bu
 . Build a ﬁtness subscription application     
 . Build a site to sell your graphic design services   
     
-I have decided to create a   
+I have decided to create an eCommerce site for a local sports shop called Sportmaster.  This is a small family run business who don't currently have a website but they did use Facebook during the various pandemic related lockdowns to offer a "click & collect" service.  This highlighted to me their clear need for a fully functioning eCommerce website.
    
 ## Project Requirements   
  
@@ -164,7 +164,7 @@ The app consists of ........
 -----
 ### Color Scheme  
   
-I have chosen a very bright and vibrant colour palette to reflect the active and sporty nature of the products being sold via the site by Sportmaster.  
+I have chosen a very bright and vibrant colour palette to reflect the active and sporty nature of the products being sold via the site by Sportmaster.  Plus the sporting colours of the local Celbridge G.A.A. and football teams are white and blue so my colour scheme reflects this.  
 ![color palette](./static/readme/colour-palette.png)  
 To create the color palette I used [Coolors](https://coolors.co/).  
 
@@ -310,11 +310,13 @@ $ git clone https://github.com/StephenJ2020/Sportmaster
 ------  
 * Table of contents generated with [markdown-toc](http://ecotrust-canada.github.io/markdown-toc/).
 * Favicon is taken from [Flaticon](https://www.flaticon.com/).  
-* Hero Image - [Homepage](https://unsplash.com/photos/Gh8QHONEHOE) 
+* Hero Image - [Homepage]() 
 *   " [Homepage](https://unsplash.com/photos/lrQPTQs7nQQ)  
-* Delivery - [pinterest](https://www.pinterest.ie/pin/311381761732525673/)  
+* Delivery - [pinterest](https://www.pinterest.ie/pin/311381761732525673/) 
+* Category Card Img - Product Announcements [Austin chan](https://unsplash.com/photos/ukzHlkoz1IE) 
   
-* Menswear:    
+* Menswear:   
+  - Category Card Img [Jonathan Borba](https://unsplash.com/photos/R0y_bEUjiOM)  
   - White Hoodie [Khalid Boutchich](https://unsplash.com/photos/AGwMgxZs1L0)  
   - Gray Hoodie [Khalid Boutchich](https://unsplash.com/photos/p_CAhGaMf8M)  
   - Wetsuit [Khalid Boutchich](https://unsplash.com/photos/JYZeQ4OCFjQ)  
@@ -335,6 +337,7 @@ $ git clone https://github.com/StephenJ2020/Sportmaster
 
     
 * Womenswear:  
+  - Category Card Img [Julia Ballew](https://unsplash.com/photos/Gh8QHONEHOE)  
   - Gray Hoodie [Brent Ninaber](https://unsplash.com/photos/DKViOG1pVTM)  
   - Cam. Baseball Cap [Christina @ wocintechchat.com](https://unsplash.com/photos/XmvKl8CDMrk)  
   - White Yoga Set [Alexi Romano](https://unsplash.com/photos/WrxPwb6-wo8)  
@@ -356,7 +359,8 @@ $ git clone https://github.com/StephenJ2020/Sportmaster
   -
     
 
-* Childernswear:
+* Childernswear:  
+  - Category Card Img [Lars Bo Nielsen](https://unsplash.com/photos/zXn5qinCDKg)
   - Disney Sneakers [Bert Ferranco](https://unsplash.com/photos/GR4EEDj6bAE)  
   - Nike ENCAP Runners [Linda Xu](https://unsplash.com/photos/fUEP0djb1hA)  
   - Converse [Andrew Itaga](https://unsplash.com/photos/QNyWeFHjZJY)  
@@ -369,6 +373,7 @@ $ git clone https://github.com/StephenJ2020/Sportmaster
     
       
 * Sports:     
+ - Category Card Img [Olga Guryanova](https://unsplash.com/photos/ft7vJxwl2RY)
  - Adidas Football Boots [Fachry Zella Devandra](https://unsplash.com/photos/u3YoW5MX26Y)  
  - Nike Football Boots [Tom Sodoge](https://unsplash.com/photos/GgEtIbD0hVo)  
  - White/Gray Adidad Football [Peter Glaser](https://unsplash.com/photos/qWs_Wa1JrKM)  
@@ -380,8 +385,9 @@ $ git clone https://github.com/StephenJ2020/Sportmaster
 
 # Acknowledgements  
 ------  
-*  
-*   
+*  As always I wish to thank my Mentor Chris Quinn for all his patience, support and advice, I couldn't have asked for a better Mentor - Thank you Chris!  
+*  The wonderful Code Institute Tutor Support team   
+*  My colleague and peers in the Slack Community who are always there to offer their support and advice and some general good cheer on the tougher days!  
 
   
 

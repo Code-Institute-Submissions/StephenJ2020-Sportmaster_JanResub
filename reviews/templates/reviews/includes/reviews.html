@@ -34,14 +34,13 @@
                                             </span>
                                         {% endif %}
                                     {% endif %} 
-                                    <span class="text-secondary review-desc">Posted on: &nbsp;{{ review.review_date|date:"M d, Y" }}</span>
-                                    <p class="review-desc">"{{ review.description }}"</p>
-                                    <p class="text-right review-desc"> - {{ review.user }} </p>
-                                    
+                                    <span>Posted on: &nbsp;{{ review.review_date|date:"M d, Y" }}</span>
+                                    <p>{{ review.description }}</p>
+                                    <p>Reviewed by - {{ review.user }} </p>
                                     <hr>
                                 {% endfor %}
                             {% else %}
-                                <p class="review-desc">No reviews avalibale for this product</p>
+                                <p>No reviews avalibale for this product</p>
                             {% endif %}   
                             </div>
                         </div>

@@ -66,9 +66,14 @@ def product_detail(request, product_id):
     """ A view to show individual product detail, inc. size, price & rating """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product=product)
+    review_form = ReviewForm()
+    product.save()
 
     context = {
         'product': product,
+        'reviews': reviews,
+        'review_form': review_form,
     }
 
     return render(request, 'products/product_detail.html', context)

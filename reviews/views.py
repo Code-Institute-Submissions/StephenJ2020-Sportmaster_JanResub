@@ -52,7 +52,7 @@ def edit_review(request, review_id):
             messages.success(request, 'You review has been \
             successfully edited.')
             return redirect(
-                reverse('product_detail', args=(review.product.id,)))
+                reverse('product_detail', args=(review.products.id,)))
         else:
             messages.error(request, 'Please try again.')
     else:
@@ -62,7 +62,7 @@ def edit_review(request, review_id):
     context = {
         "form": form,
         "review": review,
-        "product": review.product,
+        "product": review.products,
     }
 
     return render(request, template, context)
@@ -76,4 +76,4 @@ def delete_review(request, review_id):
     review = get_object_or_404(Review, pk=review_id)
     review.delete()
     messages.success(request, 'Review deleted!')
-    return redirect(reverse('product_detail', args=(review.product.id,)))
+    return redirect(reverse('product_detail', args=(review.products.id,)))

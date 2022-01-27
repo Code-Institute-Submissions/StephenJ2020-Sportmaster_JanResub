@@ -1,20 +1,14 @@
 from django.db import models
-from django.contrib.auth.models import User
+
+from profiles.models import UserProfile
 from products.models import Product
 
 
 # Review system model
 class Review(models.Model):
 
-    product = models.ForeignKey(Product,
-                                on_delete=models.CASCADE,
-                                related_name='reviews')
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    description = models.TextField(max_length=1000, null=False, blank=False)
-    created = models.DateField(auto_now_add=True)
-
-    def __str__(self):
-        return f"Review on {self.product.name} by {self.user}"
-
-    class Meta:
-        ordering = ['id']
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    description = models.TextField(max_length=500, null=False,
+                                   blank=False)
+    review_date = models.DateTimeField(auto_now_add=True)

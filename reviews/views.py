@@ -19,10 +19,8 @@ def add_review(request, product_id):
         form = ReviewForm(request.POST)
         if form.is_valid():
             description = form.cleaned_data['description']
-            Review.objects.create(
-                user=user,
-                product=get_object_or_404(Product, pk=product_id),
-                description=description)
+            Review.objects.create(user=user, product=get_object_or_404(Product,
+                                  pk=product_id), description=description)
             messages.success(request, 'You review has been \
                 successfully added.')
             return redirect(reverse('product_detail', args=[product_id]))

@@ -3,14 +3,11 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from django.db.models import Avg
 from .models import Product, Category
 from .forms import ProductForm
 from reviews.models import Review
-<<<<<<< HEAD
-=======
+
 from reviews.forms import ReviewForm
->>>>>>> aebfb7de8b542e76a323e3985274197b850baa1b
 
 
 def all_products(request):

@@ -9,18 +9,17 @@
             </div>
             <!-- Bootstrap accordion -->
             <div class="bs-example review-accordion">
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="accordionReview">
                     <div class="card">
                         <div class="card-header review-card" id="headingOne">
                             <h2 class="mb-0">
                                 <button type="button" class="btn cta-button btn-link" data-toggle="collapse" data-target="#collapseOne">view Reviews</button>									
                             </h2>
                         </div>
-                        <div id="collapseOne" class="collapse view-review" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div id="collapseOne" class="collapse view-review" aria-labelledby="headingOne" data-parent="#accordionReview">
                             <div class="card-body">
                             {% if reviews %}
                                 {% for review in reviews %}
-                                    <h5 class="mb-0 fw-bold text-uppercase">{{ review.title }}</h5>
                                     {% if request.user.is_authenticated %} 
                                         {% if request.user|lower == review.user|lower %}
                                             <span>
@@ -35,7 +34,6 @@
                                             </span>
                                         {% endif %}
                                     {% endif %} 
-                                    <p class="rating-stars txt-small mt-1" data-value="{{ review.rating }}"></p>
                                     <span class="text-secondary review-desc">Posted on: &nbsp;{{ review.review_date|date:"M d, Y" }}</span>
                                     <p class="review-desc">"{{ review.description }}"</p>
                                     <p class="text-right review-desc"> - {{ review.user }} </p>

@@ -23,11 +23,11 @@ def add_review(request, product_id):
                 user=user,
                 product=get_object_or_404(Product, pk=product_id),
                 description=description)
-            messages.success(request, 'Successfully added review.')
+            messages.success(request, 'You review has been \
+                successfully added.')
             return redirect(reverse('product_detail', args=[product_id]))
         else:
-            messages.error(request, 'Failed to add review. \
-                    Please check the form is valid and try again.')
+            messages.error(request, 'Please try again.')
     else:
         form = ReviewForm()
     template = 'reviews/add_review.html'
@@ -49,12 +49,12 @@ def edit_review(request, review_id):
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully edited review.')
+            messages.success(request, 'You review has been \
+            successfully edited.')
             return redirect(
                 reverse('product_detail', args=(review.product.id,)))
         else:
-            messages.error(request, 'Failed to edit review. \
-                    Please check the form is valid and try again.')
+            messages.error(request, 'Please try again.')
     else:
         form = ReviewForm(instance=review)
 

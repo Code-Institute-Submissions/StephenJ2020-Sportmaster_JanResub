@@ -20,27 +20,27 @@ def announcements(request):
     return render(request, template, context)
 
 
-def post_detail(request, slug):
-    """ Display each Post """
-    post = Post.objects.get(slug=slug)
+# def post_detail(request, slug):
+#     """ Display each Post """
+#     post = Post.objects.get(slug=slug)
 
-    if request.method == 'POST':
-        form = CommentForm(request.POST)
-        if form.is_valid():
-            obj = form.save(commit=False)
-            obj.post = post
-            obj.save()
-            return redirect('post_detail', slug=post.slug)
-    else:
-        form = CommentForm()
+#     if request.method == 'POST':
+#         form = CommentForm(request.POST)
+#         if form.is_valid():
+#             obj = form.save(commit=False)
+#             obj.post = post
+#             obj.save()
+#             return redirect('post_detail', slug=post.slug)
+#     else:
+#         form = CommentForm()
 
-    template = 'announcements/post_detail.html'
-    context = {
-        'post': post,
-        'form': form,
-    }
+#     template = 'announcements/post_detail.html'
+#     context = {
+#         'post': post,
+#         'form': form,
+#     }
 
-    return render(request, template, context)
+#     return render(request, template, context)
 
 
 @login_required

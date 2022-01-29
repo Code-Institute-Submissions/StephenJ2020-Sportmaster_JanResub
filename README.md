@@ -314,6 +314,7 @@ $ git clone https://github.com/StephenJ2020/Sportmaster
 *   " [Homepage](https://unsplash.com/photos/lrQPTQs7nQQ)  
 * Delivery - [pinterest](https://www.pinterest.ie/pin/311381761732525673/) 
 * Category Card Img - Product Announcements [Austin chan](https://unsplash.com/photos/ukzHlkoz1IE) 
+* New Product Announcement Blurb - [Gym Wear](https://www.gymwear.co.uk/blogs/news/v3-apparel)  
   
 * Menswear:   
   - Category Card Img [Jonathan Borba](https://unsplash.com/photos/R0y_bEUjiOM)  

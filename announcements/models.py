@@ -16,7 +16,9 @@ class Post(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField()
     author = models.CharField(max_length=100)
-    blurb = models.TextField(max_length=1000, null=False,
+    intro = models.TextField(max_length=1000, null=False,
+                             blank=False)
+    blurb = models.TextField(max_length=3000, null=False,
                              blank=False)
     image = models.ImageField(null=True, blank=True)
     date_added = models.DateTimeField(auto_now_add=True)

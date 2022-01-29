@@ -12,62 +12,63 @@
     <!--- Blog Intro --->
     <section>
         <div class="container">
-            
-                <div class="row mt-4">
-                    <div class="col text-center pl-2 pr-2">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Feugiat nisl pretium fusce id velit ut tortor pretium. Lacus vestibulum sed arcu non odio euismod lacinia. Facilisi cras 
-                            fermentum odio eu feugiat pretium. Eget velit aliquet sagittis id consectetur purus ut. Volutpat lacus laoreet non curabitur 
-                            gravida arcu ac tortor dignissim. At varius vel pharetra vel turpis nunc eget lorem dolor. Scelerisque viverra mauris in 
-                            aliquam sem fringilla ut. Id porta nibh venenatis cras sed felis eget velit. 
-                        </p>
-                    </div>
+            <div class="row mt-4">
+                <div class="col text-center pl-2 pr-2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Feugiat nisl pretium fusce id velit ut tortor pretium. Lacus vestibulum sed arcu non odio euismod lacinia. Facilisi cras 
+                        fermentum odio eu feugiat pretium. Eget velit aliquet sagittis id consectetur purus ut. Volutpat lacus laoreet non curabitur 
+                        gravida arcu ac tortor dignissim. At varius vel pharetra vel turpis nunc eget lorem dolor. Scelerisque viverra mauris in 
+                        aliquam sem fringilla ut. Id porta nibh venenatis cras sed felis eget velit. 
+                    </p>
                 </div>
-            
+            </div> 
         </div>
     
-    <!-- Image -->
+    <!-- Blog Image -->
     <div class="row">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <img src="{{ MEDIA_URL }}product-announcements.jpg" alt="decor" width=350 height=350>
+                    <img src="{{ MEDIA_URL }}product-announcements.jpg" alt="New Product Announcements"  width=350 height=350>
                 </div>
             </div>
         </div>
     </div>
     <hr>
-    
-</div>
-<!--- Display all available Posts --->
-<div class="container">
-    <p class="text-right text-danger text-muted"><strong>{{ post_count }}</strong> Posts Available</p>
-    {% for post in posts %}
-        {% if posts %}
-            <div class="row mt-4">
-                <div class="col-8 offset-2">
-                    <h3 class="mt-3">{{ post.title }}</h3>
+    <!--- To display all the Posts available --->
+    <div>
+        <p class="text-right text-danger text-muted"><strong>{{ post_count }}</strong> Posts Available</p>
+        {% for post in posts %}
+            {% if posts %}
+                <div class="row mt-4">
+                    <div class="col-8 offset-2">
+                        <h3 class="mt-3">{{ post.title }}</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-8 offset-2">
-                    <div class="text-muted">{{ post.date_added | date:"d M - Y | h:i"}}</div>
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <div class="text-muted">{{ post.date_added | date:"d M - Y | h:i"}}</div>
+                    </div>
                 </div>
-            </div>
-            <div class="row pb-2 mt-3 mb-5">
-                <div class="col-8 offset-2">
-                    <a href="{% url 'post_detail'  post.slug %}" class="cta-button">Read more...</a>
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <article>{{ post.intro }}</article>  
+                    </div>
                 </div>
-            </div>
-        {% else %}
-            <div class="row">
-                <div class="col-8 offset-2">
-                    <h2> No Posts Available</h2>
+                <div class="row pb-2 mt-3 mb-5">
+                    <div class="col-8 offset-2">
+                        <a href="{% url 'post_detail'  post.slug %}" class="btn btn-black rounded-0 text-uppercase mt-2">Read more...</a>
+                    </div>
                 </div>
-            </div>
-        {% endif %}
-{% endfor %}
+            {% else %}
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <h2> No Posts Available</h2>
+                    </div>
+                </div>
+            {% endif %}
+    {% endfor %}
 </div>
 </section>
 {% endblock %}

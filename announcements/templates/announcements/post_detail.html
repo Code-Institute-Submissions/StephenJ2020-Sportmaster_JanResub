@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<!--- Post Detail --->
+<div class="container-fluid">
+    <div class="row mt-5 py-2">
+        <div class="col-sm-10 offset-sm-1 col-md-5 offset-md-2">
+            <h3 class="text-dark text-center">{{ post.title}}</h3>
+        </div>
+        <div class="col-sm-10 offset-sm-1 col-md-3 offset-md-0">
+            <small><strong class="text-danger">Posted on: </strong>{{ post.date_added | date:"d M - Y - h:i  "}}</small>
+            {% if request.user.is_superuser %}
+                <span><small class="ml-3">
+                    <a href="{% url 'edit_post' post.slug %}">| Edit</a> |
+                    <a class="text-danger" href="{% url 'delete_post' post.slug %}">Delete</a></small>
+                </span>
+            {% endif %}
+        </div>
+        
+    </div>
+    <div class="row mb-4">
+        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-muted">
+            <p>{{ post.blurb|linebreaks }}</p>
+        </div>
+    </div>
+    <div class="row py-2">
+        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+            <img class="card-img-left" src="{{ post.image.url }}" width=350 height=350 alt="{{ post.name }}">
+        </div>  
+    </div>
+    
+    <div class="row mb-4">
+        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 ">
+            <p><a class ="btn btn-black rounded-0 text-uppercase mt-5" href="{% url 'announcements' %}">View All Posts</a> </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

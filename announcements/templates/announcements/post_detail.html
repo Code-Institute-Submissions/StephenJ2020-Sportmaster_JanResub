@@ -11,14 +11,8 @@
         </div>
         <div class="col-sm-10 offset-sm-1 col-md-3 offset-md-0">
             <small><strong class="text-danger">Posted on: </strong>{{ post.date_added | date:"d M - Y - h:i  "}}</small>
-            {% if request.user.is_superuser %}
-                <span><small class="ml-3">
-                    <a href="{% url 'edit_post' post.slug %}">| Edit</a> |
-                    <a class="text-danger" href="{% url 'delete_post' post.slug %}">Delete</a></small>
-                </span>
-            {% endif %}
+            <small><strong class="text-primary mx-2">Author: </strong>{{ post.author}}</small>
         </div>
-        
     </div>
     <div class="row mb-4">
         <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-muted">
@@ -33,7 +27,16 @@
     
     <div class="row mb-4">
         <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 ">
-            <p><a class ="btn btn-black rounded-0 text-uppercase mt-5" href="{% url 'announcements' %}">View All Posts</a> </p>
+            <p>
+                <a class ="btn btn-black rounded-0 text-uppercase mt-5" href="{% url 'announcements' %}">View All Posts</a> 
+            
+                {% if request.user.is_superuser %}
+                    <span><small class="ml-5">
+                        <a href="{% url 'edit_post' post.slug %}" class="btn text-primary">| Edit</a> |
+                        <a href="{% url 'delete_post' post.slug %}" class="btn text-danger">Delete</a></small>
+                    </span>
+                {% endif %}
+            </p>
         </div>
     </div>
 </div>

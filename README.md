@@ -4,7 +4,54 @@
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)    
    
- 
+
+- [Project Overview](#project-overview)
+  * [Project Description](#project-description)
+  * [Project Requirements](#project-requirements)
+    + [Main Technologies](#main-technologies)
+    + [Mandatory Requirements](#mandatory-requirements)
+- [UX](#ux)
+  * [Strategy](#strategy)
+  * [User Stories](#user-stories)
+- [Scope](#scope)
+  * [Features](#features)
+    + [Implemented Features](#implemented-features)
+    + [Future Features](#future-features)
+  * [Skeleton](#skeleton)
+  * [Surface](#surface)
+    + [Color Scheme](#color-scheme)
+- [Technologies Used](#technologies-used)
+  * [Languages](#languages)
+  * [Frameworks, Libraries, Programs & Platforms Used:](#frameworks--libraries--programs---platforms-used-)
+- [Bugs & Fixes](#bugs---fixes)
+- [Deployment](#deployment)
+  * [Deployment Steps](#deployment-steps)
+  * [Project and Repository Creation](#project-and-repository-creation)
+    + [Deployment Steps](#deployment-steps-1)
+    + [Connect Heroku app to Github repository](#connect-heroku-app-to-github-repository)
+    + [Add Heroku Postgres Database](#add-heroku-postgres-database)
+    + [Setting up environment variables](#setting-up-environment-variables)
+    + [Setting up the AWS s3 bucket](#setting-up-the-aws-s3-bucket)
+    + [AWS IAM (Identity and Access Management) setup](#aws-iam--identity-and-access-management--setup)
+    + [Connecting Heroku to AWS S3](#connecting-heroku-to-aws-s3)
+    + [Enable automatic deployment:](#enable-automatic-deployment-)
+  * [How to Fork the repository](#how-to-fork-the-repository)
+  * [Making a Local Clone](#making-a-local-clone)
+- [Testing](#testing)
+  * [Code Validity](#code-validity)
+  * [User registration tested](#user-registration-tested)
+  * [User Profile tested](#user-profile-tested)
+  * [Checkout process tested](#checkout-process-tested)
+  * [Testing User Stories](#testing-user-stories)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+    
+# Sportmaster  
+------  
+
 # Project Overview 
 ___ 
 ## Project Description   
@@ -43,41 +90,6 @@ I have decided to create an eCommerce site for a local sports shop called Sportm
 12. Deployment: Deploy the final version of your code to a hosting platform such as Heroku.    
 13. Security: Make sure to not include any passwords or secret keys in the project repository. Make sure to turn off the Django DEBUG mode, which could expose secrets.   
         
-          
-            
-    
-# Sportmaster  
-------  
-## [Table of Contents](#table-of-contents)
-
-- [UX](#ux)
-  * [Strategy](#strategy)
-  * [User Stories](#user-stories)
-  * [Scope](#scope)
-  * [Structure](#structure)
-  * [Skeleton](#skeleton)
-  * [Surface](#surface)
-    + [Color Scheme](#color-scheme)
-    + [Typography](#typography)
-    + [Imagery](#imagery)
-- [Technologies Used](#technologies-used)
-  * [Languages](#languages)
-  * [Frameworks, Libraries, Programs & Platforms Used:](#frameworks--libraries--programs---platforms-used-)
-- [Features](#features)
-  * [Implemented Features](#implemented-features)
-  * [Future Features](#future-features)
-- [Bugs & Fixes](#bugs---fixes)
-- [Deployment](#deployment)
-  * [Deployment Steps](#deployment-steps)
-  * [Making a clone to run locally](#making-a-clone-to-run-locally)
-  * [How to Fork the respository](#how-to-fork-the-respository)
-  * [Making a Local Clone](#making-a-local-clone)
-- [Testing](#testing)
-  * [Code Validity](#code-validity)
-  * [Testing User Stories](#testing-user-stories)
-- [Credits](#credits)
-- [Acknowledgements](#acknowledgements)   
-  
 
 # UX
 ___

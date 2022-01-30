@@ -182,12 +182,51 @@ To create the color palette I used [Coolors](https://coolors.co/).
   
 # Technologies Used  
 ------  
-## Languages
+## Languages  
+-  [__HTML5__](https://en.wikipedia.org/wiki/HTML5)
+
+*  [__CSS3__](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)  
  
+-  [__Javascript__](https://en.wikipedia.org/wiki/JavaScript)  
+  
+-  [__Python__](https://en.wikipedia.org/wiki/Python_(programming_language))  
 
 ## Frameworks, Libraries, Programs & Platforms Used:   
 
+* [__Django 3.2__](https://www.djangoproject.com/) This was the main framework used to build the app. 
+  - Django extensions used  
+     * [Django Allauth](https://django-allauth.readthedocs.io/en/latest/)  
+     * [Django Countries](https://pypi.org/project/django-countries/)  
+     * [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)  
+     * [Django-Storages](https://django-storages.readthedocs.io/en/latest/)  
+* [__jquery 3.6.0__](https://blog.jquery.com/) Javascript framework used to create some of the site's interactive functions.  
+* [__Bootstrap 4__](https://getbootstrap.com/docs/4.1/getting-started/introduction/) Bootstrap Grid was used for responsiveness as well as features such as accordion.  
+* [__Jinja__](https://jinja.palletsprojects.com/en/3.0.x/templates/) Was used to create the Python templates.   
+* [__Heroku__](https://heroku.com/) The cloud platform for deploying the app.  
+* [__SQlite3__](https://www.sqlite.org/index.html) The database used for development.  
+* [__Heroku Postgres__](https://www.heroku.com/postgres/) PostgreSQL is the database used for the production site. 
+* [__Stripe__](https://stripe.com/ie) Online payment system.
+* [__AWS-S3__](https://aws.amazon.com/s3/) Amazon Object storage service.  
 
+* [__Google Fonts__](https://fonts.google.com) used for project fonts.  
+* [__Gitpod__](https://gitpod.io) Gitpod was the IDE used to create the site and for version control.  
+* [__Github__](https://github.com/) GitHub is used to store the projects code after being pushed from Gitpod.  
+* [__Balsamiq__](https://balsamiq.com) Balsamiq was used to create wireframes during the design process.
+* [__Django Secret Key Generator__](https://miniwebtool.com/django-secret-key-generator/) to generate the required key.   
+* [__Fontawesome__](https://fontawesome.com) Font Awesome was used for the Icons throughout the site.  
+* [__coolors.co__](https://coolors.co/384364-ffd2b0-f6f7eb-cccccc-333333) used for colour palette selection.  
+* [__TinyPNG__](https://tinypng.com/) used to compress image sizes.  
+* Mozilla DevTools used for debugging and testing.  
+* Google DevTools used for debugging and testing.  
+* [__W3Scool__](https://www.w3schools.com/) used as a general source of information.  
+* [__Unsplash__](https://unsplash.com/) used to download images for the website.  
+* [__Stackoverflow__](https://stackoverflow.com/) used as one of my main sources of information.  
+* [__W3C Markup Validator__](https://validator.w3.org/) Used to test HTML code validation.  
+* [__W3C CSS Validatior - Jigsaw__](https://jigsaw.w3.org/css-validator/) Used to test CSS code validation.  
+* [__jshint Validatior__](https://jshint.com/) Used to test Javascript / JQuery code validation.
+* [__PEP8 Validatior__](http://pep8online.com/) Used to test that Python code is PEP8 compliant.
+* [__Mobile-Friendly Test__](https://search.google.com/test/mobile-friendly?id=ZteYI-6sVDRnrLMf_Chjmw) used to check if code is Mobile Friendly.  
+* [__Am I Responsive__](http://ami.responsivedesign.is/) used to create Mock-up images to represent the site's responsiveness.  
 
 [:top:](#Sportmaster)
 
@@ -442,7 +481,25 @@ It is important to note that this project will not run locally unless a `.env` f
 ------  
 ## Code Validity
 
+![Mobile Friendly](static/readme/mobile-friendly.png)    
+![Lighthouse - index.html](static/readme/lighthouse-index2.png)  
+![Lighthouse - products.html](static/readme/lighthouse-products.png)  
+![Lighthouse - bag.html](static/readme/lighthouse-bag.png)  
+![Lighthouse - checkout.html](static/readme/lighthouse-checkout.png)  
+![CSS Validation](static/readme/css-base.png)  
+![jshint Validation](static/readme/jshint-stripe-elements.png) 
   
+## User registration tested  
+![New user successfully registered](static/readme/user-reg-via-workspace-url.png)  
+  
+## User Profile tested  
+![User profile with order history](static/readme/user-profile-via-workspace-url.png)
+
+## Checkout process tested  
+![CLI Order Confirmation ](static/readme/user-order-confirmation-in-console.png)  
+![Onscreen Success Confirmation](static/readme/user-order-confirmation-via-workspace-url.png)
+  
+      
 ## Testing User Stories
 * *First time user stories:*
     * 

@@ -143,18 +143,35 @@ ___
 
 [:top:](#Sportmaster)
 
-## Scope  
+# Scope  
 ------  
-* 
 
+## Features  
+
+### Implemented Features
+* A Navigation bar to guide the user experience across the website; 
+* A search box within the Navbar for a quick search option; 
+* Products divided into four categories, each with a number of sub-categories;  
+* Ability to filter products by Price, Rating or Category; 
+* New Products Announcements to showcase the arrival of new products;  
+* An option to create a User Profile;  
+* An option to add product reviews;  
   
-## Structure  
-------  
-The app consists of ........  
+### Future Features
+
+
   
 ## Skeleton
 ------  
-* 
+   
+*  __Mobile Wireframe__
+![Mobile Wireframe](static/readme/wireframe-mobile.png)  
+  
+*  __Tablet Wireframe__
+![Tablet Wireframe](static/readme/wireframe-tablet.png)  
+    
+*  __Desktop Wireframe__
+![Desktop Wireframe](static/readme/wireframe-desktop.png)
   
   
 [:top:](#Sportmaster)
@@ -167,19 +184,8 @@ The app consists of ........
 I have chosen a very bright and vibrant colour palette to reflect the active and sporty nature of the products being sold via the site by Sportmaster.  Plus the sporting colours of the local Celbridge G.A.A. and football teams are white and blue so my colour scheme reflects this.  
 ![color palette](./static/readme/colour-palette.png)  
 To create the color palette I used [Coolors](https://coolors.co/).  
-
-
-
-### Typography
-
-* 
-  
-### Imagery  
-
-**(imagery choice goes here)**  
-  
-  
-  
+    
+      
 # Technologies Used  
 ------  
 ## Languages  
@@ -230,18 +236,6 @@ To create the color palette I used [Coolors](https://coolors.co/).
 
 [:top:](#Sportmaster)
 
-# Features  
-------  
-
-## Implemented Features
-*   
-
-  
-  
-## Future Features
-  
-
-  
   
 # Bugs & Fixes  
 ------  
@@ -500,12 +494,46 @@ It is important to note that this project will not run locally unless a `.env` f
 ![Onscreen Success Confirmation](static/readme/user-order-confirmation-via-workspace-url.png)
   
       
-## Testing User Stories
-* *First time user stories:*
-    * 
-    * 
+## Testing User Stories  
+  
+ **As a first time user I want to be able to:**  
 
-* *Returning user stories:*
+    * Clearly understand the purpose of the website.  
+    * Easily navigate around the website. 
+    * View all the products the website is selling. 
+    * Filter products by category. 
+    * Filter products by price or alphabetical order.
+    * Search for a specific product. 
+    * View detailed information about each individual products on a separate page. 
+    * Choose the size, change the quantity and add a product to a shopping basket.
+    * View a full list of items within the shopping basket with a breakdown of the individual costs.
+    * View, update & remove products within my shopping basket. 
+    * Easily see in the Navbar the current total of any items within the shopping basket.  
+    * Securely checkout and purchase the products within my shopping basket. 
+    * Receive an order confirmation on-screen and by email upon completion of my purchase.
+    * Register and create a user profile.   
+    * Contact the stores owners if I have a query.
+
+   
+* **As a returning user I want to be able to:**  
+    * Login and out of the website with ease. 
+    * View my user profile. 
+    * Save default delivery details in order to speed up future purchases.   
+    * Update my default delivery details.  
+    * View my order history. 
+  
+  
+* **As the site owner I want:**
+    * Customers to be able to view the full list of products available for purchase.  
+    * Customers to be able to filter products by category, price or alphabetical order.  
+    * Customers to be able to select and purchase products as quick & easily as possible.  
+    * Customers to be able to add, edit, update or delete products within their shopping basket.
+    * Customers to be able to read product reviews prior to making a purchase.  
+    * Customers to be able to write product reviews after making a purchase.  
+    * Customers to be able to read our product blog about new or featured products.  
+    * To be able to maintain & update the website via an Admin panel.  
+    * To be able to add, edit, update or delete products from the website.  
+    * To be able to add, edit, update or delete blog posts from the website
 
 
 

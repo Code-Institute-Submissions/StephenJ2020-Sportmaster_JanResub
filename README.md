@@ -1,6 +1,6 @@
-[![Mock-up](static/readme/mock-up.png)](https://github.com/StephenJ2020/Sportmaster/index.html) 
+[![Mock-up](static/readme/mock-up.png)](https://sportmaster-irl.herokuapp.com/) 
 
-[Sportmaster - Live Site](https://github.com/StephenJ2020/Sportmaster/index.html)  
+[Sportmaster - Live Site](https://sportmaster-irl.herokuapp.com/)  
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)    
    

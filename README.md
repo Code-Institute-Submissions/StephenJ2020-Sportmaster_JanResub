@@ -239,30 +239,39 @@ To create the color palette I used [Coolors](https://coolors.co/).
   
 # Bugs & Fixes  
 ------  
-**Bugs and fixes to go here**  
-
+ 
+**Bug 1**
 * Dropdown menus in Navbar not working:  
  - I had been using the Bootstrap 4 classes rather than the updated Bootstrap 5 classes.  
    - Thankfully I found a very helpful post on Slack by Vera which made me realise my error.  
    ![Slack Post](static/readme/bug-data-bs-toggle.png)  
   
+**Bug 2**
 * Media files not loading after deployment to Heroku and AWS:  
  - I needed to update the src file path from /media/image-name.jpg to {{ MEDIA_URL }}image-name.jpg  
    - I found the solution to this bug on slack.  
    ![Slack Post](static/readme/load-media-images.png)  
 
+**Bug 3**
 * jQuery not working properly with Bootstrap 5:  
  - The increase / decrease button and the update and remove buttons in the shopping bag wouldn't work properly.  
   - I search Slack for solutions and I looked at the Bootstrap documentation but I couldn't find a suitable solution. It appearead from Slack that many students have faced the same issue and that many had choosen to remove the increase / decrease buttons on desktop devices as their solution as the issue seems to be a duplicate ID with the Mobile Navbar.  
   I chose to strip out Bootstrap 5 and revert to Bootstrap 4 as per the Boutigue Ado Walk-Through project.  
-    
-* CountyField on Models.py in checkout app cause a migration error:  
- -   
-  - https://github.com/saleor/saleor/issues/5352  
-    https://pypi.org/project/django-countries/#countryfield  
-    https://pythonrepo.com/repo/SmileyChris-django-countries-python-django-utilities  
-    https://stackoverflow.com/questions/8484689/django-form-database-error-value-too-long-for-type-character-varying4 
-        
+
+**Bug 4**    
+*  CountyField on Models.py in checkout app causing a migration error:  
+ [Github post by JannikZed re a similar isue.](https://github.com/saleor/saleor/issues/5352)  
+ [django-countries 7.2.1](https://pypi.org/project/django-countries/#countryfield)  
+ [PythonRepo](https://pythonrepo.com/repo/)
+ [Chris Beaven - PythonRepo](https://pythonrepo.com/repo/SmileyChris-django-countries-python-django-utilities )  
+ [Stack Overflow](https://stackoverflow.com/questions/8484689/django-form-database-error-value-too-long-for-type-character-varying4)
+
+   ![My slack post asking for help with tis iss](static/readme/CountryField-migration.png)  
+   ![A similar post from another student on Slack](static/readme/CountryField-migration1.png)  
+
+* The solution to this issue was to add `null-False` & `blank=False` to CountryField, then to update exisiting data in the DB before proceeding to run migrate.  
+  
+ ![Solution](static/readme/CountryField-migration-solution.png)
 
 
   

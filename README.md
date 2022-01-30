@@ -184,8 +184,11 @@ ___
 I have chosen a very bright and vibrant colour palette to reflect the active and sporty nature of the products being sold via the site by Sportmaster.  Plus the sporting colours of the local Celbridge G.A.A. and football teams are white and blue so my colour scheme reflects this.  
 ![color palette](./static/readme/colour-palette.png)  
 To create the color palette I used [Coolors](https://coolors.co/).  
-    
-      
+  
+* Further information on my design inspiration can be found on the project [Wiki Page](https://github.com/StephenJ2020/Sportmaster/wiki/Design-Inspiration).  
+
+        
+        
 # Technologies Used  
 ------  
 ## Languages  
@@ -504,45 +507,86 @@ It is important to note that this project will not run locally unless a `.env` f
   
       
 ## Testing User Stories  
-  
- **As a first time user I want to be able to:**  
 
-    * Clearly understand the purpose of the website.  
-    * Easily navigate around the website. 
-    * View all the products the website is selling. 
-    * Filter products by category. 
-    * Filter products by price or alphabetical order.
-    * Search for a specific product. 
-    * View detailed information about each individual products on a separate page. 
-    * Choose the size, change the quantity and add a product to a shopping basket.
-    * View a full list of items within the shopping basket with a breakdown of the individual costs.
-    * View, update & remove products within my shopping basket. 
-    * Easily see in the Navbar the current total of any items within the shopping basket.  
-    * Securely checkout and purchase the products within my shopping basket. 
-    * Receive an order confirmation on-screen and by email upon completion of my purchase.
-    * Register and create a user profile.   
-    * Contact the stores owners if I have a query.
+* **As a first time user I want to be able to:**  
 
+  * Clearly understand the purpose of the website.  
+      - The brandname `Sportmaster` is prominently featured in the top left-hand corner of the Navbar.  
+      - The brand logo is of a person running and this is also featured beside the brandname in the Navbar.  
+      - The Navbar contain the four main category names which make it clear that the site sells clothing & sports related items.  
+      - The Hero image on the Homepage is of a young lady in sports gear doing exercises.  
+      - The tagline over the Hero image reads `Fitness is Life`.  
+      - The main body of the Homepage contains four large images of sporting or fitness related activies to represent each category and below each image there is a short description of what product are contained within each category. 
+  * Easily navigate around the website.  
+      - There is a fixed Navbar across the top of the site.  
+      - The four main category names are displayed across the centre of the Navbar.  
+      - There is a Search Box in the centre of the Navbar.  
+      - The main body of the Homepage contains four large images of sporting or fitness related activies to represent each category and below each image there is a short description of what product are contained within each category.
+  * View all the products the website is selling.  
+      - The Navbar contains a prominent link to `All Products`.  
+  * Filter products by category. 
+      - The Navbar contains the four main categories and allows the user to select sub-categories.
+      - The user can also search for a category or product by name in the search bar.
+  * Filter products by price or alphabetical order.  
+      - Under the `All Products link in the navbar the user can filter by Price, Rating & Category.
+  * Search for a specific product. 
+      - There is a search box in the Navbar for this purpose.  
+  * View detailed information about each individual products on a separate page. 
+      - The product_detail.html page provides this ferature.    
+  * Choose the size, change the quantity and add a product to a shopping basket.  
+      - The product_detail.html page provides this ferature.    
+  * View a full list of items within the shopping basket with a breakdown of the individual costs.
+      - The checkout page provides this ferature.   
+  * View, update & remove products within my shopping basket. 
+      - The checkout page provides this ferature.   
+  * Easily see in the Navbar the current total of any items within the shopping basket. 
+      - There is a shopping basket icon in the top right of the Navbar which gives the current total cost.       
+  * Securely checkout and purchase the products within my shopping basket.  
+      - The checkout page provides this ferature.   
+  * Receive an order confirmation on-screen and by email upon completion of my purchase.  
+      - Yes both on-screen and email confirmation is provided to the user.   
+  * Register and create a user profile.   
+      - Yes available via the main Navbar depending on whether the user is loggin in or nt.  
+  * Contact the stores owners if I have a query.  
+      - This feature has not been provided in this release of the site but it does provide links to the stores social media accounts so the user can contact the store via those channels.    
+
+ 
    
 * **As a returning user I want to be able to:**  
-    * Login and out of the website with ease. 
-    * View my user profile. 
+    * Login and out of the website with ease.  
+      - This feature is provide in the top right of the Navbar.      
+    * View my user profile.  
+      - The user profile page can be accessed via the Navbar.     
     * Save default delivery details in order to speed up future purchases.   
+      - The user profile page provides this feature.     
     * Update my default delivery details.  
+      - The user profile page provides this feature.    
     * View my order history. 
-  
-  
+      - The user profile page provides this feature.  
+            
+    
+    
 * **As the site owner I want:**
     * Customers to be able to view the full list of products available for purchase.  
+      - This feature is provide via the products.html page.      
     * Customers to be able to filter products by category, price or alphabetical order.  
+      - This feature is provide via the `All Product` link on the main Navbar.     
     * Customers to be able to select and purchase products as quick & easily as possible.  
-    * Customers to be able to add, edit, update or delete products within their shopping basket.
+      - I believe this to be correct.       
+    * Customers to be able to add, edit, update or delete products within their shopping basket.  
+      - This feature is provide via the Checkout page.     
     * Customers to be able to read product reviews prior to making a purchase.  
+      - This feature is provide via the Reviews page which is linked to from the product_detail.html page.     
     * Customers to be able to write product reviews after making a purchase.  
+      - Users must be registered users and logged into the site before they can create a product review but in the next release of the site steps will be taken to restrict the creation of reviews to those users who have actually purchased a specific item.       
     * Customers to be able to read our product blog about new or featured products.  
+      - This feature is provide via the New Product Announcements page which is accessed from the bottom of the homepage.     
     * To be able to maintain & update the website via an Admin panel.  
+      - This feature is provide for the Admin/Superuser.     
     * To be able to add, edit, update or delete products from the website.  
-    * To be able to add, edit, update or delete blog posts from the website
+      - This feature is provide for the Admin/Superuser.     
+    * To be able to add, edit, update or delete blog posts from the website 
+      - This feature is provide for the Admin/Superuser.     
 
 
 
